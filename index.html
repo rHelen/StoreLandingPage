@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store - Rute Helen</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-image: url("img/sky.png");
+        background-repeat: no-repeat;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark primary-color cor p-1 container-fluid w-100"
+    >
+      <!-- Collapse button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#basicExampleNav"
+        aria-controls="basicExampleNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#cadastro"
+              >Cadastro
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+            data-toggle="modal"
+            data-target="#modalLoginForm">Login</a>
+          </li>
+        </ul>
+        <!-- Links -->
+
+        <form class="form-inline">
+
+      </div>
+      <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+    <style>
+      body {
+        background-color: rgb(255, 248, 254);
+      }
+    </style>
+
+    <div>
+      <div class="container col-4 mb-50 p-4 mt-5" style="background-color: rgba(248, 252, 255, 0.9); border-radius: 15px;">
+        <h2 class="center" id="cadastro">Cadastre-se</h2>
+      <form>
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" onkeyup="validaNome()" />
+        </div>
+        <div id="txtNome" class="mb-20"></div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" onkeyup="validaEmail()" />
+        </div>
+        <div id="txtEmail" class="mb-20"></div>
+        <div>
+          <label for="senha">Senha:</label>
+          <input type="text" id="senha" onkeyup="validaSenha()" />
+        </div>
+        <div id="txtSenha" class="mb-20"></div>
+        <div>
+          <label for="senha">Confirmar senha:</label>
+          <input type="text" id="confirmarSenha" onkeyup="confirmaSenha()" />
+        </div>
+        <div id="txtCSenha" class="mb-20"></div>
+        <div>
+          <label for="numero">Telefone:</label>
+          <input type="number" id="numero" onkeyup="validaTelefone()" />
+        </div>
+        <div id="txtTelefone" class="mb-20"></div>
+      </form>
+    </div>
+
+
+    <div class="container d-flex align-items-center justify-content-center mb-30">
+      <button onclick="enviar()" class="pr-3 pl-3 py-1 rounded-pill">
+        Cadastrar
+      </button>
+      <span class="mx-2">Já tem uma conta?</span>
+      
+        <span><a
+          href=""
+          class="btn btn-default btn-rounded p-0"
+          data-toggle="modal"
+          data-target="#modalLoginForm"
+          >Faça login</a
+        ></span>
+      
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalLoginForm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Login</h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body mx-3">
+            <div class="md-form mb-5">
+              <i class="fas fa-envelope prefix grey-text"></i>
+              <input
+                type="email"
+                id="defaultForm-email"
+                class="form-control validate"
+              />
+              <label
+                data-error="wrong"
+                data-success="right"
+                for="defaultForm-email"
+                >Your email</label
+              >
+            </div>
+
+            <div class="md-form mb-4">
+              <i class="fas fa-lock prefix grey-text"></i>
+              <input
+                type="password"
+                id="defaultForm-pass"
+                class="form-control validate"
+              />
+              <label
+                data-error="wrong"
+                data-success="right"
+                for="defaultForm-pass"
+                >Your password</label
+              >
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-default">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+    <div class="container justify-content-center align-items-center d-flex mb-3 w-75 mt-5" id="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/BEXL80LS0-I?si=2j8538PnU4ah49iL" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" >
+    </iframe>
+    </div>
+
+    <hr />
+    <footer id="footer" style="background-color: rgb(255, 219, 243)">
+      <div class="rodape col-4 container">
+        <a href="https://linkedin.com/in/rutehelencosta" target="_blank"
+          ><img class="tm-social" src="img/linkedin.png" alt="Ícone linkedin"
+        /></a>
+        <a href="https://github.com/rHelen" target="_blank"
+          ><img class="tm-social" src="img/github.png" alt="Ícone GitHub"
+        /></a>
+        <a href="https://instagram.com/rhelencst" target="_blank"
+          ><img class="tm-social" src="img/instagram.png" alt="Ícone Instagram"
+        /></a>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
