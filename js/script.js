@@ -80,14 +80,14 @@ function enviar() {
   }
 }
 
-function adicionarCarrinho1(){
+/*function adicionarCarrinho1(){
     txtAdicionarCarrinho1.style.color = "green";
     produto1.style.background = "rgba(140, 255, 112, 0.5)"
 }
 function adicionarCarrinho2(){
     txtAdicionarCarrinho2.style.color = "green";
     produto2.style.background = "rgba(140, 255, 112, 0.5)"
-}
+}*/
 
 function githubZoom(){
   github.style.width = '14rem'
