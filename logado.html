@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
     <link rel="stylesheet" href="css/logado.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -19,20 +20,18 @@
     </header>
 
     <section class="main-content">
-        <article class="product">
-            <img src="produto1.jpg" alt="Descrição do Produto 1">
-            <h2>Nome do Produto 1</h2>
-            <p>Descrição do Produto 1.</p>
+        <article class="product" id="produto1">
+            <h2>Curso dev em 1 semana</h2>
+            <p>Venha ser desenvolvedor e ganhar R$10.000,00 em 3 meses.</p>
             <p class="price">R$ 99,99</p>
-            <button>Adicionar ao Carrinho</button>
+            <button id="txtAdicionarCarrinho1" onclick="adicionarCarrinho1()">Adicionar ao Carrinho</button>
         </article>
 
-        <article class="product">
-            <img src="produto2.jpg" alt="Descrição do Produto 2">
-            <h2>Nome do Produto 2</h2>
-            <p>Descrição do Produto 2.</p>
-            <p class="price">R$ 79,99</p>
-            <button>Adicionar ao Carrinho</button>
+        <article class="product" id="produto2">
+            <h2>Curso dev front 3 anos porque é mais difícil</h2>
+            <p>Aprenda a ser um dev incrível.</p>
+            <p class="price">R$ 199,99</p>
+            <button id="txtAdicionarCarrinho2" onclick="adicionarCarrinho2()">Adicionar ao Carrinho</button>
         </article>
 
         <!-- Mais produtos aqui... -->
