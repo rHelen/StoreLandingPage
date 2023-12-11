@@ -3,14 +3,14 @@ let nome = window.document.getElementById("nome");
 let email = document.querySelector("input#email");
 let senha = document.querySelector("input#senha");
 let confirmarSenha = document.querySelector("#confirmarSenha");
-//let numero = document.querySelector("#numero");
+let numero = document.querySelector("#numero");
 let nomeOk = false;
 let EmailOk = false;
 let senhaOk = false;
 let telefoneOk = false;
 let github = document.querySelector("#github")
 
-//nome.style.width = "100%";
+nome.style.width = "100%";
 email.style.width = "100%";
 senha.style.width = "100%";
 confirmarSenha.style.width = "100%";
