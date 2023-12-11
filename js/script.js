@@ -74,6 +74,7 @@ function validaTelefone(){
 function enviar() {
   if (nomeOk == true && emailOk == true && senhaOk == true && telefoneOk == true) {
     alert("Cadastro feito com sucesso!");
+    window.location.href = "logado.html"
   } else {
     alert("Revise os campos e tente novamente");
   }
